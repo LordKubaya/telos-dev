@@ -41,8 +41,8 @@ RUN cd /tmp && \
 
 # Install EOSIO
 RUN cd /tmp && \
-    wget -q https://github.com/eosio/eos/releases/download/v2.1.0/eosio_2.1.0-1-ubuntu-20.04_amd64.deb && \
-    apt install -y ./eosio_2.1.0-1-ubuntu-20.04_amd64.deb && \
+    wget -q https://github.com/AntelopeIO/spring/releases/download/v1.2.2/antelope-spring_1.2.2_amd64.deb && \
+    apt install -y ./antelope-spring_1.2.2_amd64.deb && \
     rm -f *.deb && \
     apt-get clean && \
     rm -rf /var/lib/apt/archives/* /var/lib/apt/lists/* /tmp/*

@@ -5,16 +5,17 @@ This repository contains scripts and configurations for setting up a development
 ## Getting Started
 To set up your development environment, follow these steps:
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/telosnetwork/telos-dev.git
+```bash
+git clone https://github.com/AndreAugusto11/telos-dev.git
+```
 ```bash
 cd telos-dev
 ```
 
-2. For a fresh environment, execute:
-    ```bash
-    ./fresh_env.sh
-    ```
+1. For a fresh environment, execute:
+```bash
+./fresh_env.sh
+```
 
 ## Project Structure
 
@@ -26,10 +27,12 @@ cd telos-dev
 
 ## Software Versions Installed
 
-antelope-spring_1.2.2_amd64.deb
-cdt_4.0.1_amd64.deb
+* antelope-spring_1.2.2_amd64.deb
+* cdt_4.0.1_amd64.deb
 
 ## Current Problem
+
+Run `./fresh_env.sh` to set up the environment.
 
 ```bash
 🎉 All contracts deployed! You can now interact with them using cleos.
