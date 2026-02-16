@@ -58,7 +58,7 @@ cleos create account eosio hello $PUBKEY -p eosio@active
 echo "📋 Account 'hello' created with public key: $PUBKEY"
 
 echo "Step 5: Compiling and deploying hello contract in contracts/hello..."
-cd /workspace/contracts/hello
+cd ./contracts/hello
 cdt-cpp -abigen -o hello.wasm hello.cpp
 cleos set contract hello . hello.wasm hello.abi -p hello@active
 echo "✅ Contract deployed to account 'hello'!"
@@ -70,7 +70,7 @@ cleos create account eosio minimal $PUBKEY -p eosio@active
 echo "📋 Account 'minimal' created with public key: $PUBKEY"
 
 echo "Step 7: Compiling and deploying minimal contract in contracts/minimal..."
-cd /workspace/contracts/minimal
+cd ./../minimal
 cdt-cpp -abigen -o minimal.wasm minimal.cpp
 cleos set contract minimal . minimal.wasm minimal.abi -p minimal@active
 echo "✅ Contract deployed to account 'minimal'!"
